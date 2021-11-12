@@ -1,0 +1,25 @@
+@import "../theme.scss";
+
+.chat-message {
+  padding: 8px;
+  margin: 4px;
+  background-color: $primary-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: row;
+  border-radius: $border-radius--bigger;
+
+  &--has-image {
+    padding: 0px;
+  }
+}
+
+.in {
+  background-color: $chat-bubble-in-color;
+  margin-right: 25%;
+}
+
+.out {
+  background-color: $chat-bubble-out-color;
+  margin-left: 25%;
+}

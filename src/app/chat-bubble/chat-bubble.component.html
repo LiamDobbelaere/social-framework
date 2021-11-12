@@ -1,0 +1,17 @@
+<img
+  class="chat-message"
+  [class.chat-message--has-image]="!!image"
+  *ngIf="image; else textMessage"
+  [src]="image"
+/>
+
+<ng-template #textMessage>
+  <div
+    [class.chat-message--has-image]="!!image"
+    class="chat-message"
+    [class.in]="isIncoming"
+    [class.out]="!isIncoming"
+  >
+    <ng-content></ng-content>
+  </div>
+</ng-template>

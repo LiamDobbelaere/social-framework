@@ -1,0 +1,4 @@
+<div class="tab-header" (click)="expanded = !expanded">Test-title</div>
+<div #tabContent *ngIf="expanded" class="tab-content">
+  <ng-content></ng-content>
+</div>

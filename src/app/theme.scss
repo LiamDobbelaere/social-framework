@@ -1,0 +1,14 @@
+$background-color: #202025;
+
+$primary-color: #a11111;
+$primary-color--lighter: lighten($primary-color, 25%);
+$primary-color--darker: darken($primary-color, 25%);
+$primary-color--active: darken($primary-color, 16%);
+
+$chat-bubble-in-color: #808080;
+$chat-bubble-out-color: $primary-color;
+
+$text-color: #ffffff;
+
+$border-radius: 8px;
+$border-radius--bigger: 16px;
